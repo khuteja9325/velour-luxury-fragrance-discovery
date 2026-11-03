@@ -3,6 +3,7 @@ import { Package, Check, X, ShoppingBag, Gift, Sparkles, ShieldCheck } from 'luc
 import { FRAGRANCES } from '../data/fragrances';
 import { Fragrance } from '../types';
 import { useApp } from '../context/AppContext';
+import discoveryBoxImage from '../assets/images/fragrance_discovery_box_1791467681081.jpg';
 
 export const DiscoveryBoxPage: React.FC = () => {
   const { addToCart, showToast } = useApp();
@@ -51,7 +52,7 @@ export const DiscoveryBoxPage: React.FC = () => {
       price: boxBasePrice,
       rating: 5.0,
       reviewCount: 240,
-      image: '/src/assets/images/fragrance_discovery_box_1791467681081.jpg',
+      image: discoveryBoxImage,
       scentFamily: 'Amber',
       topNotes: ['Custom 5 Vials', boxColor],
       heartNotes: [boxNames],
@@ -93,7 +94,7 @@ export const DiscoveryBoxPage: React.FC = () => {
         <div className="lg:col-span-5 bg-[#121212] border border-[#262626] p-6 sm:p-8 space-y-6 lg:sticky lg:top-28">
           <div className="aspect-[4/3] bg-[#161616] border border-[#2B2B2B] overflow-hidden relative">
             <img
-              src="/src/assets/images/fragrance_discovery_box_1791467681081.jpg"
+              src={discoveryBoxImage}
               alt="Velouré Discovery Box Set"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover"

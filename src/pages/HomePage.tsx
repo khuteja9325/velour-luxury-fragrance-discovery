@@ -3,6 +3,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight, Sparkles, Sliders, Layers, Award, Droplets, Quote } from 'lucide-react';
 import { FRAGRANCES, SCENT_FAMILIES_INFO, MOODS_LIST } from '../data/fragrances';
 import { ProductCard } from '../components/common/ProductCard';
+import heroImage from '../assets/images/hero_luxury_perfume_1791467611642.jpg';
+import layeringDuoImage from '../assets/images/fragrance_layering_duo_1791467644625.jpg';
 
 export const HomePage: React.FC = () => {
   const navigate = useNavigate();
@@ -17,7 +19,7 @@ export const HomePage: React.FC = () => {
         {/* Cinematic Backdrop Image with Dark Luxury Scrim */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/src/assets/images/hero_luxury_perfume_1791467611642.jpg"
+            src={heroImage}
             alt="Velouré Haute Parfumerie Solstice Flacon"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center scale-105 filter brightness-75 contrast-110"
@@ -269,7 +271,7 @@ export const HomePage: React.FC = () => {
 
           <div className="lg:col-span-6 relative min-h-[300px]">
             <img
-              src="/src/assets/images/fragrance_layering_duo_1791467644625.jpg"
+              src={layeringDuoImage}
               alt="Layering Duo flacons"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover object-center"

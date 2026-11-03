@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Sparkles, ArrowRight, ShieldCheck, Droplet, Wind, Compass } from 'lucide-react';
+import heroImage from '../assets/images/hero_luxury_perfume_1791467611642.jpg';
 
 export const OurStoryPage: React.FC = () => {
   return (
@@ -22,7 +23,7 @@ export const OurStoryPage: React.FC = () => {
       <section className="border border-[#222] bg-[#121212] overflow-hidden grid grid-cols-1 md:grid-cols-12">
         <div className="md:col-span-7 aspect-[4/3] md:aspect-auto">
           <img
-            src="/src/assets/images/hero_luxury_perfume_1791467611642.jpg"
+            src={heroImage}
             alt="Velouré Haute Parfumerie Flacon"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover"
